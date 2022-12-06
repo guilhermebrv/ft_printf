@@ -1,2 +1,1 @@
-# ft_printf
-#2 42 Lisboa Project
+# ft_printf - Recoding printf() /42 Lisboa/
