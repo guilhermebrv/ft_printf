@@ -6,7 +6,7 @@
 /*   By: gubranco <gubranco@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 15:32:07 by gubranco          #+#    #+#             */
-/*   Updated: 2023/02/01 17:06:22 by gubranco         ###   ########.fr       */
+/*   Updated: 2023/02/13 18:51:48 by gubranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ int	ft_printf_ptr(void *ptr)
 {
 	int	length;
 
+	if (ptr == NULL)
+		return (ft_printf_string("(nil)", 0, 0));
 	length = ft_printf_string("0x", 0, 0);
 	length += ft_number((unsigned long int)ptr, 16, HX_LOW);
 	return (length);
