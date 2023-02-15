@@ -54,7 +54,7 @@ int	ft_printf_ptr(void *ptr)
 {
 	int	length;
 
-	if (ptr == NULL)
+	if (!ptr)
 		return (ft_printf_string("(nil)", 0, 0));
 	length = ft_printf_string("0x", 0, 0);
 	length += ft_number((unsigned long int)ptr, 16, HX_LOW);
